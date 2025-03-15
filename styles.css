@@ -1,0 +1,177 @@
+.profile_pct{
+    border-radius: 20%;
+}
+
+body{
+    background-color: #f8fcf8;
+}
+
+  .navbar-brand {
+    font-family: "papyrus";
+  }
+
+  .navbar-nav li{
+    font-family: "Lucida Handwriting";
+  }
+
+  h1{
+    font-family: "Lucida Handwriting";
+  }
+  h2{
+    font-family: "Lucida Handwriting";
+  }
+
+  .lead{
+    font-family: "Copperplate";
+  }
+
+  .footer{
+    background-color:rgb(75, 107, 138);
+    color: rgb(7, 1, 1);
+  }
+
+  .card p{
+    font-family: 'Garamond', Courier, monospace;
+  }
+
+  h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .featurette ul li{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .carou-note{
+    background-color: #ffff;
+  }
+
+  /* Remove background color and borders */
+  .card-header .nav-tabs .nav-link {
+    background-color: transparent !important;;
+    border: none !important;
+    color: black !important;
+}
+/* Underline active tab */
+.nav-tabs .nav-link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+  /* Center navbar content and space items */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  /* Profile picture styling */
+  .navbar-brand img {
+    width: 50px; /* Adjust size */
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+  }
+
+  /* Logo text styling */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+
+  /* Align navigation items to the right */
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Navbar links styling */
+  .nav-link {
+    color: black; /* Default color */
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Active link styling */
+  .nav-link.active {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+
+  /* Hover effect */
+  .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.372);
+    color: white;
+    border-radius: 5px;
+  }
+
+  /* Toggler button image */
+  .navbar-toggler img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 991px) { /* Bootstrap's breakpoint for collapse */
+    .navbar-brand img{
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+    /* Ensure buttons take equal space */
+    .btn-container {
+      display: flex;
+      justify-content: space-evenly; /* Even spacing */
+      flex-wrap: wrap; /* Ensures responsiveness */
+      gap: 10px; /* Space between buttons */
+    }
+  
+    .btn-container .btn {
+      flex-grow: 1; /* Buttons expand evenly */
+      text-align: center;
+    }
+  
+    /* Ensure buttons stack on small screens */
+    @media (max-width: 768px) {
+      .btn-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn-container .btn {
+        width: 80%; /* Adjust button width on mobile */
+      }
+    }
+
+.gradient-background {
+    background: linear-gradient(300deg, #ccffd9, #ffe6cc, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  .gradient-background-footer {
+    background: linear-gradient(300deg, rgb(126, 127, 129), rgb(75, 108, 142), rgb(4, 120, 236));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
